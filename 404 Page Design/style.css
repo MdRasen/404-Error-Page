@@ -1,0 +1,109 @@
+/* Project Name: 404 Error Page
+Youtube: https://youtube.com/@devRasen
+Copyright: 2023 ©MdRasen */
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+/* General CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #009688), url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .details {
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.container .details h1 {
+  font-size: 200px;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+.container .details h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+}
+
+.container .btns .btn {
+  display: inline-block;
+  width: 150px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  transition: all 0.5s;
+}
+
+.container .btns .btn-home {
+  color: #009688;
+  background: whitesmoke;
+}
+
+.container .btns .btn-contact {
+  color: whitesmoke;
+}
+
+.container .btns .btn-contact:hover {
+  color: #009688;
+  background: whitesmoke;
+}
+
+.container .social-links {
+  margin-top: 15px;
+}
+
+.container .social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: whitesmoke;
+  margin: 0px 4px;
+  transition: all 0.5s;
+}
+
+.container .social-links a:hover {
+  color: #009688;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+/* Device Responsive */
+@media (max-width: 480px) {
+  .container .details h1 {
+    font-size: 135px;
+  }
+
+  .container .details h2 {
+    font-size: 16px;
+  }
+
+  .container .btns .btn {
+    margin: 10px 0;
+  }
+}
